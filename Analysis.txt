@@ -1,0 +1,25 @@
+Run time analysis is in the inline comment of each .py files.
+task 0:
+run time does not scale up when input size increase, so it is constant O(1).
+solver.first_record()  ## the run time analysis is O(1). 
+solver.last_record() ## the run time analysis is O(1). 
+
+task 1:
+these is no nested for loop thus run time is linear scale up with the input size, so the run time is O(n)
+solver.different_telephone_numbers()  ## the run time analysis is O(n). 
+
+task 2:
+these is no nested for loop thus run time is linear scale up with the input size, so the run time is O(n)
+solver.number_spent_the_longest_time()  ## the run time analysis is O(n). 
+
+task 3:
+the non nested for loop is O(n) plus the worst case of sort is O(nlogn), so take the bigger one ,  
+solver.codes()  ## the run time analysis is O(nlogn). 
+
+these is no nested for loop thus run time is linear scale up with the input size, so the run time is O(n)
+solver.percentage()  ## the run time analysis is O(n). 
+
+task 4:
+`if o not in exclude` is O(n) which is inside a for loop, so the run time for the for loop is O(n^2).
+parallelly, the worst case of sort is O(nlogn), so take the bigger one which is the O(n^2).
+solver.number_of_telemarketers()  ## the run time analysis is O(n^2).
